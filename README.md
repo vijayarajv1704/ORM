@@ -63,8 +63,7 @@ class studentAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-![image](https://github.com/vijayarajv1704/ORM/assets/121303741/a3ea3c3d-30c8-4fb8-8ad3-022582fc19b6)
-
+![Screenshot 2023-05-12 090627](https://github.com/vijayarajv1704/ORM/assets/121303741/ccc0a698-765f-4a8b-87c8-74ae637463f0)
 
 ## RESULT
 
