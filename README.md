@@ -1,62 +1,59 @@
-# Django ORM Web Application
+# Ex02 Django ORM Web Application
 
 ## AIM
-To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
+To develop a Django application to store and retrieve data from a student database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
+![image](https://github.com/SAILESHKUMAR33/ORM/assets/113497410/8e1f95c9-b256-429e-bbad-f4441060a131)
+
 
 ## DESIGN STEPS
 
 ### STEP 1:
-Clone the problem from github.
-
+Clone the repository from github.
 ### STEP 2:
-Create a new app.
-
+Create an admin interfacefor Django.
 ### STEP 3:
-Enter the code for admin.py and models.py
-
-## STEP 4:
-Create django app and add student details.
+Create an app and edit settings.py.
+### STEP 4:
+Makemigrations and migrate the changes.
+### STEP 5:
+Create admin user and write pythoncode for admin and models.
+### STEP 6:
+Make all the migrations to 'myapp'.
+### STEP 7:
+Create an student database with 10 feilds using runserver command.
 
 ## PROGRAM
-## models.py 
+```
+admin.py 
+
+from django.contrib import admin
+from .models import student,studentAdmin 
+admin.site.register(student,studentAdmin)
+
+models.py
 
 from django.db import models
-
 from django.contrib import admin
-
-
-class Student(models.Model):
-    
-    referencenumber=models.CharField(primary_key=true,max_length=20,help_text="reference number")
-    
-    name=models.CharField(max_length=100)
-    
-    age=models.IntegerField()
-    
+class student (models.Model):
+    sid=models.CharField(max_length=28)
+    name=models.CharField(max_length=30)
+    regno=models.IntegerField()
+    marks=models.IntegerField()
     email=models.EmailField()
 
+class studentAdmin(admin.ModelAdmin):
+    list_display=('sid','name','regno','marks','email')
 
-class StudentAdmin(admin.ModelAdmin):
-   
-   list_display=('referencenumber','name','age','email')
+```
 
-
-## Admin.py
-
-from django.contrib import admin
-
-from myapp.models import Student,StudentAdmin
-
-admin.site.register(Student,StudentAdmin
 
 ## OUTPUT
-![Screenshot 2023-05-11 144515](https://github.com/SudharsanamRK/django-orm-app/assets/115523484/e8dd044d-e518-48cf-aa1d-76cc5a1af514)
+![image](https://github.com/SAILESHKUMAR33/ORM/assets/113497410/f6d9493f-1375-46cf-8a88-53c3f7ce3d8e)
 
-![Screenshot 2023-05-11 144440](https://github.com/SudharsanamRK/django-orm-app/assets/115523484/8e9d323e-c3ed-4ce0-bbdf-53e26df406a5)
+
 
 ## RESULT
-Program successfully executed
+The code executed successfully
