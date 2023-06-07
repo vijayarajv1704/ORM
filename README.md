@@ -51,7 +51,8 @@ class studentAdmin(admin.ModelAdmin):
 
 
 ## OUTPUT
-![image](https://github.com/SAILESHKUMAR33/ORM/assets/113497410/f6d9493f-1375-46cf-8a88-53c3f7ce3d8e)
+![WhatsApp Image 2023-06-07 at 21 41 14](https://github.com/vijayarajv1704/ORM/assets/121303741/165fdfb2-49c1-4656-989a-afef4dca0529)
+
 
 
 
