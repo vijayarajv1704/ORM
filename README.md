@@ -51,10 +51,9 @@ class studentAdmin(admin.ModelAdmin):
 
 
 ## OUTPUT
-![WhatsApp Image 2023-06-07 at 21 41 14](https://github.com/vijayarajv1704/ORM/assets/121303741/165fdfb2-49c1-4656-989a-afef4dca0529)
+![Screenshot 2023-06-11 223610](https://github.com/vijayarajv1704/ORM/assets/121303741/3f1a47d3-40e7-404b-8d7c-eed708e3cd9f)
 
-
-
+![Screenshot 2023-06-11 223849](https://github.com/vijayarajv1704/ORM/assets/121303741/fe6e9915-6f9d-46e4-ad8f-7990378d70d0)
 
 ## RESULT
 The code executed successfully
